@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cinza: #f3f3f3;
+  --cor-destaque: #2DAAFF;
+  --cor-destaque-2: #632cff;
+  --preto: #53504a;
+}
+
+body {
+  background-color: var(--cinza);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  background-color: var(--cor-destaque);
+  color: white;
+  font-size: 3rem;
+  font-family: "Abril Fatface", serif;
+}
+
+.lembretes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 5vh 7vw;
+  justify-content: center;
+}
+
+.lembrete {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 2rem;
+  background-color: #2DAAFF;
+  color: white;
+  font-size: 1.3rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+.lembrete p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.clock-icon,
+.pill-icon {
+  display: flex;
+  align-items: center;
+}
+
+.editar {
+  background-color: var(--preto);
+  color: #fff;
+  border: none;
+  padding: 12px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.editar:hover {
+    background-color: rgb(207, 58, 58);
+    transition: 0.5s ease-in;
+}
+
+.nome {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fix {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    background-color: var(--cor-destaque-2);
+    min-height: 48px;
+    max-height: 48px;
+    min-width: 48px;
+    max-width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.fix:hover {
+    min-height: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    bottom: 2.8%;
+    right: 2.7%;
+    background-color: #23CED3;
+    transition: 0.3s ease;  
+}

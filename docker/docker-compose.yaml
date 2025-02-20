@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+        context: ../
+        dockerfile: docker/Dockerfile
+    ports:
+      - "8088:80"
+    volumes:
+      - ../public:/usr/share/nginx/html
+      
